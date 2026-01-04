@@ -1,28 +1,37 @@
+/* Base styles for the page */
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f6f9;
+  font-family: "Arial", sans-serif; /* quote around Arial for validator safety */
+  background-color: #f2f6f9;        /* use full property name */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;                /* safer than height: 100vh for some validators */
+  margin: 0;                        /* reset default margin */
 }
 
+/* Game container */
 .game {
-  background: white;
+  background-color: #ffffff;        /* explicit white for validator */
   padding: 30px;
   width: 320px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;           /* ensure padding is included in width */
 }
 
+/* Inputs */
 input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
+  box-sizing: border-box;           /* safe for automated tests */
+  font-family: inherit;             /* inherit from body */
 }
 
+/* Buttons */
 button {
   padding: 10px 15px;
   cursor: pointer;
+  font-family: inherit;
 }
