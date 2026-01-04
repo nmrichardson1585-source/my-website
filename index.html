@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anatomy Word Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,8 +13,8 @@
 
     <p id="definition">Loading...</p>
 
-    <input type="text" id="answer" placeholder="Type the anatomy term" />
-    <button onclick="checkAnswer()">Submit</button>
+    <input type="text" id="answer" name="answer" placeholder="Type the anatomy term" />
+    <button type="button" onclick="checkAnswer()">Submit</button>
 
     <p id="feedback"></p>
     <p>Score: <span id="score">0</span></p>
@@ -22,4 +23,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
