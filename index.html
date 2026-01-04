@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Anatomy Word Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Hello, this is my website 🚀</h1>
-    <p>I built this on my Mac.</p>
+  <div class="game">
+    <h1>🧠 Anatomy Word Game</h1>
 
-    <button onclick="sayHello()">Click me</button>
+    <p id="definition">Loading...</p>
 
-    <script src="script.js"></script>
+    <input type="text" id="answer" placeholder="Type the anatomy term" />
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
